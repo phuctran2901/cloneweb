@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+	<link href="css/base.css" rel="stylesheet">
+	<link href="css/grid.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/reponsive.css" rel="stylesheet">
+</head>
+<body>
+	<div class="app">
+		<header class="app__header">
+			<div class="grid wide">
+				<!-- Menu moblie -->
+				<nav class="nav-menu-moblie">
+					<div class="header-menu-moblie">
+						<label for="check-menu-moblie" class="menu-moblie__icon">
+								<i class="fas fa-bars"></i>
+						</label>
+						<input type="checkbox" hidden id="check-menu-moblie" class="checked-moblie">
+						<div class="menu-moblie__wrapper">
+							<ul class="menu-moblie__list">
+								<li class="menu-moblie__item">
+									<label for="check_1" class="menu-moblie__link">Shop
+										<input type="checkbox" hidden id="check_1" class="checked_1">
+										<ul class="sub-menu-moblie">
+											<li class="sub-menu-moblie__item">Headphones</li>
+											<li class="sub-menu-moblie__item">Earbuds</li>
+											<li class="sub-menu-moblie__item">Accessories</li>
+											<li class="sub-menu-moblie__item">Specials</li>
+										</ul>
+									</label>
+									<label for="check_1" class="menu-moblie__ic">
+										<i class="fas fa-plus"></i>
+									</label>
+								</li>
+								<li class="menu-moblie__item">
+									<a for="check_1" class="menu-moblie__link">Mood Bost</a>
+								</li>
+								<li class="menu-moblie__item">
+									<a for="check_1" class="menu-moblie__link">Inside Skullcandy</a>
+								</li>
+								<li class="menu-moblie__item">
+									<label for="check_2" class="menu-moblie__link">Support
+										<input type="checkbox" hidden id="check_2" class="checked_1">
+										<ul class="sub-menu-moblie">
+											<li class="sub-menu-moblie__item">Help Center</li>
+											<li class="sub-menu-moblie__item">Product Help</li>
+											<li class="sub-menu-moblie__item">Warranty</li>
+											<li class="sub-menu-moblie__item">Oders status</li>
+										</ul>
+									</label>
+									<label for="check_2" class="menu-moblie__ic">
+										<i class="fas fa-plus"></i>
+									</label>
+								</li>
+								<li class="menu-moblie__item">
+									<label for="check_3" class="menu-moblie__link">Location
+										<input type="checkbox" hidden id="check_3" class="checked_1">
+										<ul class="sub-menu-moblie">
+											<li class="sub-menu-moblie__item">Nort America</li>
+											<li class="sub-menu-moblie__item">Europe/Middlle Eeast</li>
+											<li class="sub-menu-moblie__item">Asia</li>
+											<li class="sub-menu-moblie__item">Pacific</li>
+										</ul>
+									</label>
+									<label for="check_3" class="menu-moblie__ic">
+										<i class="fas fa-plus"></i>
+									</label>
+								</li>
+							</ul>
+							<div class="menu-moblie__account">
+								<span class="menu-moblie__icon">
+									<i class="far fa-user"></i>Account
+								</span>
+							</div>
+							<div class="menu-moblie__search">
+								<span class="search-icon">
+									<i class="fas fa-search"></i>
+								</span>
+								<input type="text" placeholder="Search..." id="" class="search-moblie">
+							</div>
+						</div>
+					</div>
+					<div class="header-logo-moblie">
+						<div class="header-logo-moblie__svg">
+							<svg class="nav-menu_logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.72 19.69">
+								<title>Skullcandy Logo</title>
+								<path d="M23.7,8.05C20.24,7.17,19.58,7,19.58,6S20.7,4.4,21.67,4.4c1.45,0,2.63.42,2.72,2.09h2.94C27.33,3.3,24.68,2,21.8,2c-2.49,0-5.16,1.35-5.16,4.18,0,2.59,2.07,3.38,4.12,3.92s4.1.79,4.1,2.28-1.62,1.72-2.69,1.72c-1.62,0-3.06-.72-3.06-2.55H16.18c0,3.4,2.82,4.91,5.88,4.91,3.75,0,5.74-1.89,5.74-4.43C27.8,8.94,24.7,8.3,23.7,8.05ZM38,6.18H34.79L31.33,9.77V2.37H28.59v13.8h2.75V12.73l1.06-1,2.74,4.46h3.32L34.27,9.85Zm7.06,5.24c0,2-.64,2.86-2.12,2.86-1.28,0-1.76-.81-1.76-2.45V6.18H38.47v6.15c0,2.47.74,4.12,3.65,4.12a3.57,3.57,0,0,0,3.05-1.66h.06v1.39h2.61v-10H45.1ZM10.9,5.35C10.36,3.86,14,0,7.33,0,1.65,0,1.12,5.64.87,6.08A5,5,0,0,0,.06,7.72c-.15.73,0,1.53.47,1.53.7,0-.16-1.41.7-1.41,1.09,0,2.37,1.77,2.72,2.77-.58,1-1.4,1.73-2,1.45a1.78,1.78,0,0,1-1.2-1.61c0-.65-.6-.63-.54.2A3.07,3.07,0,0,0,1.61,13a7.62,7.62,0,0,1,2.14,2.69c.27.66.62,1,1.59,1s.23.84.89.84.27-.93.66-.93,0,.89.74.89c1.13,0,.62-1.41,1-1.65s5.21-2.82,5.13-6S11.45,6.84,10.9,5.35Zm-4.74,9a2.26,2.26,0,0,0-1.79-.2c-.43.16-.85-.08-.5-1.17a6.06,6.06,0,0,1,.7-1.57A25.36,25.36,0,0,1,6.9,14.2C6.94,14.52,6.43,14.64,6.16,14.32Zm3.3-1.81A2.62,2.62,0,1,1,12,9.9,2.57,2.57,0,0,1,9.46,12.51ZM83,5.91a3.56,3.56,0,0,0-3.05,1.66h-.06V6.18H77.27v10H80V10.93c0-2,.64-2.86,2.12-2.86,1.28,0,1.76.81,1.76,2.45v5.64h2.75V10C86.65,7.55,85.91,5.91,83,5.91Zm21.88.27L102.69,13h0l-2.26-6.84H97.51V2.37H94.77v5h0a3.44,3.44,0,0,0-3-1.49c-2.94,0-4.42,2.49-4.42,5.18s1.47,5.35,4.48,5.35a3.32,3.32,0,0,0,3-1.55h0v1.28h2.61V6.33L101,15.55a1.29,1.29,0,0,1-.95,1.87,14.14,14.14,0,0,1-1.6-.1v2.26a16.57,16.57,0,0,0,1.68.09,3.14,3.14,0,0,0,3.44-2.26l4.17-11.25ZM92.5,14.37c-1.7,0-2.41-1.64-2.41-3.21S90.71,8,92.5,8s2.36,1.55,2.36,3.17S94.32,14.37,92.5,14.37ZM49,16.17h2.75V2.37H49ZM76.11,8.75c0-2.4-2.4-2.84-4.39-2.84-2.24,0-4.54.77-4.7,3.34h2.75c.09-1.08.77-1.51,1.82-1.51s1.78.17,1.78,1.35-1.56,1.06-3.24,1.31-3.4.77-3.4,3c0,2,1.51,3,3.4,3a4.58,4.58,0,0,0,3.36-1.24,4.07,4.07,0,0,0,.19,1h2.78a5.13,5.13,0,0,1-.35-2.22ZM73.36,12.3a2,2,0,0,1-2.22,2.3c-.89,0-1.68-.25-1.68-1.28s.77-1.29,1.62-1.47a5.43,5.43,0,0,0,2.28-.58ZM53.07,16.17h2.75V2.37H53.07Zm8.66-1.8c-1.72,0-2.28-1.72-2.28-3.15S60,8,61.78,8a1.87,1.87,0,0,1,2,1.72H66.5c-.17-2.55-2.34-3.79-4.69-3.79-3.25,0-5.1,2.3-5.1,5.41a4.85,4.85,0,0,0,5,5.12,4.47,4.47,0,0,0,4.81-4.1H63.91A2.11,2.11,0,0,1,61.73,14.37Z" style="fill: #fff"></path>
+							</svg>
+						</div>
+					</div>
+					<div class="header-cart-moblie">
+						<label for="input-check__no-cart" class="nav-menu_link">
+							<span class="nav-menu_icon">
+								<i class="fas fa-shopping-bag"></i>
+							</span>	
+						</label>
+						<input type="checkbox" hidden id="input-check__no-cart" class="input-checked__no-cart">
+						<label for="input-check__no-cart" class="modal_overlay--checkbox1"></label>
+						<div class="sub-menu-no-cart">
+							<div class="sub-menu-no-cart__wrapper">
+								<div class="sub-menu-no-cart__right">
+									<h3 class="sub-menu-no-cart__heading">
+										Shopping bag
+									</h3>
+									<p class="sub-menu-no-cart__content">
+										Your bag is emty :(
+									</p>
+								</div>
+								<label for="input-check__no-cart" class="no-cart-input__icon">
+									<i class="fas fa-times"></i>
+								</label>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<!-- Menu PC -->
+				<nav class="nav-menu hide-on-moblie">
+					<ul class="nav-menu_list">
+						<li class="nav-menu_item">
+							<a href="" class="nav-menu_link">
+								<svg class="nav-menu_logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.72 19.69">
+									<title>Skullcandy Logo</title>
+									<path d="M23.7,8.05C20.24,7.17,19.58,7,19.58,6S20.7,4.4,21.67,4.4c1.45,0,2.63.42,2.72,2.09h2.94C27.33,3.3,24.68,2,21.8,2c-2.49,0-5.16,1.35-5.16,4.18,0,2.59,2.07,3.38,4.12,3.92s4.1.79,4.1,2.28-1.62,1.72-2.69,1.72c-1.62,0-3.06-.72-3.06-2.55H16.18c0,3.4,2.82,4.91,5.88,4.91,3.75,0,5.74-1.89,5.74-4.43C27.8,8.94,24.7,8.3,23.7,8.05ZM38,6.18H34.79L31.33,9.77V2.37H28.59v13.8h2.75V12.73l1.06-1,2.74,4.46h3.32L34.27,9.85Zm7.06,5.24c0,2-.64,2.86-2.12,2.86-1.28,0-1.76-.81-1.76-2.45V6.18H38.47v6.15c0,2.47.74,4.12,3.65,4.12a3.57,3.57,0,0,0,3.05-1.66h.06v1.39h2.61v-10H45.1ZM10.9,5.35C10.36,3.86,14,0,7.33,0,1.65,0,1.12,5.64.87,6.08A5,5,0,0,0,.06,7.72c-.15.73,0,1.53.47,1.53.7,0-.16-1.41.7-1.41,1.09,0,2.37,1.77,2.72,2.77-.58,1-1.4,1.73-2,1.45a1.78,1.78,0,0,1-1.2-1.61c0-.65-.6-.63-.54.2A3.07,3.07,0,0,0,1.61,13a7.62,7.62,0,0,1,2.14,2.69c.27.66.62,1,1.59,1s.23.84.89.84.27-.93.66-.93,0,.89.74.89c1.13,0,.62-1.41,1-1.65s5.21-2.82,5.13-6S11.45,6.84,10.9,5.35Zm-4.74,9a2.26,2.26,0,0,0-1.79-.2c-.43.16-.85-.08-.5-1.17a6.06,6.06,0,0,1,.7-1.57A25.36,25.36,0,0,1,6.9,14.2C6.94,14.52,6.43,14.64,6.16,14.32Zm3.3-1.81A2.62,2.62,0,1,1,12,9.9,2.57,2.57,0,0,1,9.46,12.51ZM83,5.91a3.56,3.56,0,0,0-3.05,1.66h-.06V6.18H77.27v10H80V10.93c0-2,.64-2.86,2.12-2.86,1.28,0,1.76.81,1.76,2.45v5.64h2.75V10C86.65,7.55,85.91,5.91,83,5.91Zm21.88.27L102.69,13h0l-2.26-6.84H97.51V2.37H94.77v5h0a3.44,3.44,0,0,0-3-1.49c-2.94,0-4.42,2.49-4.42,5.18s1.47,5.35,4.48,5.35a3.32,3.32,0,0,0,3-1.55h0v1.28h2.61V6.33L101,15.55a1.29,1.29,0,0,1-.95,1.87,14.14,14.14,0,0,1-1.6-.1v2.26a16.57,16.57,0,0,0,1.68.09,3.14,3.14,0,0,0,3.44-2.26l4.17-11.25ZM92.5,14.37c-1.7,0-2.41-1.64-2.41-3.21S90.71,8,92.5,8s2.36,1.55,2.36,3.17S94.32,14.37,92.5,14.37ZM49,16.17h2.75V2.37H49ZM76.11,8.75c0-2.4-2.4-2.84-4.39-2.84-2.24,0-4.54.77-4.7,3.34h2.75c.09-1.08.77-1.51,1.82-1.51s1.78.17,1.78,1.35-1.56,1.06-3.24,1.31-3.4.77-3.4,3c0,2,1.51,3,3.4,3a4.58,4.58,0,0,0,3.36-1.24,4.07,4.07,0,0,0,.19,1h2.78a5.13,5.13,0,0,1-.35-2.22ZM73.36,12.3a2,2,0,0,1-2.22,2.3c-.89,0-1.68-.25-1.68-1.28s.77-1.29,1.62-1.47a5.43,5.43,0,0,0,2.28-.58ZM53.07,16.17h2.75V2.37H53.07Zm8.66-1.8c-1.72,0-2.28-1.72-2.28-3.15S60,8,61.78,8a1.87,1.87,0,0,1,2,1.72H66.5c-.17-2.55-2.34-3.79-4.69-3.79-3.25,0-5.1,2.3-5.1,5.41a4.85,4.85,0,0,0,5,5.12,4.47,4.47,0,0,0,4.81-4.1H63.91A2.11,2.11,0,0,1,61.73,14.37Z" style="fill: #fff"></path>
+								</svg>
+							</a>
+						</li>
+						<li class="nav-menu_item nav-menu_item--active">
+							<a href="" class="nav-menu_link">Shop</a>
+							<div class="modal_overlay"></div>
+							<div class="nav-menu_sub-menu-shop">
+								<div class="nav-menu_sub-menu-shop__wrapper">
+									<div class="sub-menu-shop__center">
+										<ul class="sub-menu-shop__list">
+											<li class="sub-menu-shop__item">
+												<img class="sub-menu-shop__img"src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/content/navigation/v2/desktop-dropdown-1-1.jpg?t=234" alt="" class="sub-menu-shop__img">
+												<h1 class="sub-menu-shop_heading">Headphones</h1>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Wireless Headphones</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Wired Headphones</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Crusher ANC - NEW</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span sub-menu-shop_span--bottom ">Shop All Headphones</span>
+											</li>
+										</ul>
+										<ul class="sub-menu-shop__list">
+											<li class="sub-menu-shop__item">
+												<img class="sub-menu-shop__img"src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/content/navigation/v2/desktop-dropdown-1-2.jpg?t=234" alt="" class="sub-menu-shop__img">
+												<h1 class="sub-menu-shop_heading">Earbuds</h1>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">True Wireless</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Wireless Earbuds</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Wired Earbuds</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Indy True Wireless - New</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Sesh True Wireless - New</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span sub-menu-shop_span--bottom ">Shop All Earbuds</span>
+											</li>
+										</ul>
+										<ul class="sub-menu-shop__list">
+											<li class="sub-menu-shop__item">
+												<img class="sub-menu-shop__img"src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/content/navigation/v2/desktop-dropdown-1-3.jpg?t=234" alt="" class="sub-menu-shop__img">
+												<h1 class="sub-menu-shop_heading">Accessories</h1>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Backpacks, Travel Kits & Cases</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Power Accessories</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Hats</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Speakers</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span sub-menu-shop_span--bottom ">Shop All Accessories</span>
+											</li>
+										</ul>
+										<ul class="sub-menu-shop__list">
+											<li class="sub-menu-shop__item">
+												<img class="sub-menu-shop__img"src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/content/navigation/v2/desktop-dropdown-1-4.jpg?t=234" alt="" class="sub-menu-shop__img">
+												<h1 class="sub-menu-shop_heading">Specials</span></h1>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Custom Product</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">New Arrivals</span>
+											</li>
+											<li class="sub-menu-shop__item">
+												<span class="sub-menu-shop_span">Sales</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-menu_item nav-menu_item--active">
+							<a href="" class="nav-menu_link">Mood Bost</a>
+							<div class="modal_overlay"></div>
+							<div class="sub-menu-moodbost__wrapper">
+								<div class="sub-menu-moodbost__item  sub-menu-moodbost_item--size-big">
+									<a href="" class="sub-menu-moodbost_link">
+										<span class="sub-menu-moodbost_heading">SHOP </br>THE DROP</span>
+										<img src="https://images.prismic.io/skullcandy/ac3fd340-ed5b-4df6-b55d-8f3f43762a35_NavShopMobile.jpg?auto=compress,format&rect=0,0,800,702&w=800&h=702" alt="" class="sub-menu-moodbost_img sub-menu-moodbost_img--active">
+									</a>
+								</div>
+								<div class="sub-menu-moodbost_item--size-small ">
+										<img src="https://images.prismic.io/skullcandy/6a28e276-1246-4701-9394-afe69c355e90_%23blissfulNav.jpeg?auto=compress,format" alt="" class="sub-menu-moodbost_img sub-menu-moodbost_img--size-small">
+								</div>
+								<div class="sub-menu-moodbost__item sub-menu-moodbost_item--size-big">
+									<a href="" class="sub-menu-moodbost_link">
+										<span class="sub-menu-moodbost_heading">EXPLORE</br> THE MOD</span>
+										<img src="https://images.prismic.io/skullcandy/aa74ae88-abf3-46cb-b231-a7760ad7cee4_%7B873C6BD3-746C-4663-A78A-3A07BDCD0678%7D.jpg?auto=compress,format&rect=0,0,800,702&w=800&h=702" alt="" class="sub-menu-moodbost_img sub-menu-moodbost_img--active">
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-menu_item nav-menu_item--active">
+							<a href="" class="nav-menu_link">Inside Skullcandy</a>
+						</li>
+					</ul>
+					<ul class="nav-menu_list">
+						<li class="nav-menu_item nav-menu_item--active">
+							<a href="" class="nav-menu_link nav-menu_link--small">Location</a>
+							<div class="modal_overlay"></div>
+							<div class="sub-menu-Location">
+								<div class="sub-menu-Location__wrapper">
+									<div class="sub-menu-Location__col">
+										<ul class="sub-menu-Location__list">
+											<h3 class="sub-menu-Location__heading">North America</h3>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">Canada</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">Mexico</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">United States</a>
+											</li>
+										</ul>
+									</div>
+									<div class="sub-menu-Location__col">
+										<ul class="sub-menu-Location__list">
+											<h3 class="sub-menu-Location__heading">Eroupe / Middle East</h3>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">Austria | Österreich</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">France</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">Germany | Deutschland</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">Switzerland | Schweiz</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">United Kingdom</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">Europe (EN)</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">Other Middle Eastern Countries</a>
+											</li>
+										</ul>
+									</div>
+									<div class="sub-menu-Location__col sub-menu-Location__col--margin">
+										<ul class="sub-menu-Location__list">
+											<h3 class="sub-menu-Location__heading">AFRICA</h3>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">South Africa</a>
+											</li>
+										</ul>
+										<ul class="sub-menu-Location__list">
+											<h3 class="sub-menu-Location__heading">Asia</h3>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">Japan | 日本</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">China | 中国</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">South Korea | 대한민국</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">Taiwan | 臺灣</a>
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">India</a>
+											</li>
+										</ul>
+									</div>
+									<div class="sub-menu-Location__col sub-menu-Location__col--left">
+										<ul class="sub-menu-Location__list">
+											<h3 class="sub-menu-Location__heading">Pracific</h3>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">Australia</a>	
+											</li>
+											<li class="sub-menu-Locaiton__item">
+												<a href="" class="sub-menu-Location__link">New Zealand</a>	
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-menu_item nav-menu_item--active	">
+							<a href="" class="nav-menu_link nav-menu_link--small">Support</a>
+							<div class="sub-menu-support">
+								<div class="sub-menu-support__wrapper">
+									<ul class="sub-menu-support__list">
+										<li class="sub-menu-support__item">
+											<a href="" class="sub-menu-support__link">Help center</a>
+										</li>
+										<li class="sub-menu-support__item">
+											<a href="" class="sub-menu-support__link">Product help</a>
+										</li>
+										<li class="sub-menu-support__item">
+											<a href="" class="sub-menu-support__link">Warranty</a>
+										</li>
+										<li class="sub-menu-support__item">
+											<a href="" class="sub-menu-support__link">Order status</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="modal_overlay"></div>
+						</li>
+						<li class="nav-menu_item">
+							<a href="" class="nav-menu_link">
+								<span class="nav-menu_icon">
+									<i class="far fa-user "></i>
+								</span>
+							</a>
+						</li>
+						<li class="nav-menu_item">
+							<label for="input_check" class="nav-menu_link">
+								<span class="nav-menu_icon">
+									<i class="fas fa-search "></i>
+								</span>
+							</label>
+							<input type="checkbox" hidden class="input__checked" id="input_check">
+							<label for="input_check" class="modal_overlay--checkbox"></label>
+							<div class="search-input">
+								<div class="search-input__wrapper">
+									<input type="text" id="" placeholder="Search..." class="search-input__content">
+									<label for="input_check" class="search-input__icon">
+											<i class="fas fa-times"></i>
+									</label>
+								</div>
+							</div>
+						</li>
+						<li class="nav-menu_item">
+							<label for="input-check__no-cart" class="nav-menu_link">
+								<span class="nav-menu_icon">
+									<i class="fas fa-shopping-bag"></i>
+								</span>	
+							</label>
+							<input type="checkbox" hidden id="input-check__no-cart" class="input-checked__no-cart">
+							<label for="input-check__no-cart" class="modal_overlay--checkbox1"></label>
+							<div class="sub-menu-no-cart">
+								<div class="sub-menu-no-cart__wrapper">
+									<div class="sub-menu-no-cart__right">
+										<h3 class="sub-menu-no-cart__heading">
+											Shopping bag
+										</h3>
+										<p class="sub-menu-no-cart__content">
+											Your bag is emty :(
+										</p>
+									</div>
+									<label for="input-check__no-cart" class="no-cart-input__icon">
+										<i class="fas fa-times"></i>
+									</label>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="modal_overlay"></div>
+				</nav>
+			</div>
+		</header>
+		<div class="body">
+			<div class="body-container">
+				<div class="grid">
+					<div class="row no-gutters">
+						<div class="col l-12 c-12 m-12">
+							<div class="heading-site-promo">
+								<p class="heading-site-promo__link">
+									Free shipping on orders over $100 | 2 Year Limited Warranty
+								</p>
+							</div>	
+						</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col l-8 c-12 m-8">
+							<div class="banner-img__container">
+								<div class="banner-img__content">
+									<div class="banner-img__wrapper">
+										<h5 class="banner-img_heading">
+											CONNECTED,NOT</br> TIED DOWN.
+										</h5>
+										<p>
+											Shop our top-selling Indy True Wireless Earbuds.
+										</p>
+										<a href="#" class="btn btn--active btn-mobile">
+											Shop now	
+										</a>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col l-4 c-12 m-4">
+							<div class="banner-img__cursor">
+								<div class="banner-img-1"></div>
+								<div class="banner-img-2"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col l-4 m-4 c-12">
+							<div class="home-gallery__img-1 cursor">
+								<div class="home-gallery__item">
+									<img src="https://images.prismic.io/skullcandy/7d0b27d0-7fdc-4fd0-8ab3-0636b46b9101_P4_desktop_sesh_green_hover_EN.jpg" alt="" class="home-gallery__img">
+								</div>
+							</div>
+						</div>
+						<div class="col l-4 m-4 c-12">
+							<div class="home-gallery__img-2 cursor">
+								<div class="home-gallery__item">
+									<img src="https://images.prismic.io/skullcandy/8c2fd53e-a08b-42d1-8446-82c1373b64cd_P5_desktop_crusher_ANC_black_hover.jpg" alt="" class="home-gallery__img">
+								</div>
+							</div>
+						</div>
+						<div class="col l-4 m-4 c-12">
+							<div class="home-gallery__img-3 cursor">
+								<div class="home-gallery__item">
+									<img src="https://images.prismic.io/skullcandy/43b3b368-f7f2-47bc-810a-1afd507b9adb_P6_desktop_method_ANC_black_hover.jpg" alt="" class="home-gallery__img">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col l-12 c-12 m-12">
+							<div class="module-bg-img__container">
+								<div class="module-bg-img__content">
+									<h5 class="modu-bg-img__heading">HEAR BEYOND THE</br> SURFACE.</h5>
+									<p>Meet Crusher ANC, a groundbreaking, immersive headphone that can be tuned to your unique hearing.</p>
+									<a href="#" class="btn btn--active ">Shop Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col l-12 c-12 m-12">
+							<div class="module-bg-img__container-2">
+								<div class="module-bg-img__content-2">
+									<h5 class="modu-bg-img__heading-2">HAPPIER TRAILS</h5>
+									<p>Introducing Vert, a better way to take your music to the mountain.</p>
+									<a href="#" class="btn btn--active btn--center">Shop Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer" id="footer-main">
+			<div class="footer-container">
+				<div class="grid wide">
+					<div class="row no-gutters">
+						<div class="col l-12 c-12 m-12">
+							<div class="footer-feedback-email">
+								<div class="footer-feedback-email__container">
+									<h5 class="footer-info-heading">HEAR IT FISRT</h5>
+									<p class="footer-info-copy">Sign up and save on your first order. Be the first to get access to limited-edition products, exclusive music performances, and athlete stories.</p>
+									<div class="footer-info__container">
+										<input type="text" placeholder="Email Address" class="footer-info-email">
+										<span class="footer-info-icon">
+											<i class="fas fa-chevron-right"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-body-contact">
+				<div class="grid wide">
+					<div class="row no-gutters">
+						<div class="col l-3 m-4 c-12">
+							<div class="footer-contact__wrapper">
+								<div class="footer-contact__icon-heading">
+									<h5 class="footer-contact__headding">Follow Us</h5>
+									<ul class="footer-contact__list">
+										<li class="footer-contact__item">
+											<i class="fab fa-instagram"></i>
+										</li>
+										<li class="footer-contact__item">
+											<i class="fab fa-youtube"></i>
+										</li>
+										<li class="footer-contact__item">
+											<i class="fab fa-facebook-square"></i>
+										</li>
+										<li class="footer-contact__item">
+											<i class="fab fa-twitter"></i>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col l-6 m-4 c-12">
+							<div class="footer-contact__wrapper-2 hide-on-moblie">
+								<ul class="footer-contact__list-2">
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Help Center</a>
+									</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Contact Us</a>
+									</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Account</a>
+									</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Product Help</a>
+									</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Warranty</a>
+									</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Oder Status</a>
+									</li>
+								</ul>
+								<ul class="footer-contact__list-2">
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Compare</a>
+									</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Custom</a>
+									</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Product</a>
+									</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Bulk Orders</a>
+									</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Student</a>
+									</
+												<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Discount</a>
+									</li>
+												<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Press</a>
+									</li>
+												<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Releases</a>
+									</li>
+								</ul>
+								<ul class="footer-contact__list-2">
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">About</a>
+									</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Born in PC</a>
+										</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Account</a>
+									</li>
+									<li class="footer-contact_item-2">
+									<a href="#" class="footer-contact__link">Protect Our</a>
+									</li>
+									<li class="footer-contact_item-2">
+										<a href="#" class="footer-contact__link">Winters</a>
+									</li>
+									<li class="footer-contact_item-2">
+									<a href="#" class="footer-contact__link">Careenrs</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col l-3 m-4 c-12">
+							<div class="footer-contact__wrapper-3">
+								<h5 class="footer-contact__headding-3">SUBSCRIBE TO OUR PODCAST</h5>
+								<ul class="footer-contact__list-3">
+									<li class="footer-contact__item-3">
+										<a href="" class="footer-contact__link-3">iTunes</a>
+									</li>
+									<li class="footer-contact__item-3">
+										<a href="" class="footer-contact__link-3">Spotify</a>
+									</li>
+									<li class="footer-contact__item-3">
+										<a href="" class="footer-contact__link-3">Youtube</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-base">
+				<div class="grid wide">
+					<div class="footer-base__container">
+						<div class="footer-base__links">
+							<ul>
+								<li class="footer-base__links--seperate">
+									<a href="#">Privacy Policy</a>
+								</li>
+								<li>
+									<a href="#">Terms Of Use</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-base__copyright">
+							<p>
+								<span class="footer-base__icon">
+									<i class="far fa-copyright"></i>
+								</span>
+								2020 Skullcandy.com All Rights Reserved
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>	
+</body>
+</html>

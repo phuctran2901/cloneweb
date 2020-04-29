@@ -1,0 +1,126 @@
+:root {
+    --white-color : #fff;
+    --black-color : #000;
+    --text-color :#333;
+}
+
+
+* {
+    box-sizing: inherit;
+}
+
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    display: none;
+}
+.modal_overlay--checkbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    display: none;
+}
+.modal_overlay--checkbox1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    display: none;
+}
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+@keyframes FadeIn {
+    from {
+        top: calc(0% + 30px);
+        opacity: 0;
+    }
+    to {
+        top:calc(0% + 59px);
+        opacity: 1;
+    }
+}
+@keyframes activeheading {
+    0% {
+        color:var(--white-color);
+    }
+    20% {
+        color: orangered;
+    }
+    40% {
+        color: orchid;
+    }
+    60% {
+        color: black;
+    }
+    80% {
+        color: green;
+    }
+    100% {
+        color: white;
+    }
+}
+.btn {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    max-width: 151px;
+    padding: 12px;
+    color:var(--black-color);
+    text-align: center;
+    outline: unset;
+    overflow:hidden;
+    z-index: 1;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+    background-color:rgba(255 ,255, 255, 0.8)
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.btn--active::before {
+    background-color: var(--white-color);
+    width: 100%;
+    height: 50%;
+    transform: translate(-50%,-50%) rotate(60deg);
+}
+.btn--active:hover::before {
+    background-color: var(--white-color);
+    height: 380%;
+}
+
+.cursor {
+    cursor: pointer;
+}
